@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <title>LooksMatch - Welcom</title>
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/5499/5499242.png" type="image/x-icon">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="mycss.css">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.13/css/all.css' asp-append-version="true">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" asp-append-version="true" />
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="myscript.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+<header>
+  <nav class="navbar fixed-top navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+      <div class="container-fluid">
+          <iconify-icon icon="ph:eye-light" width="30" height="30" style="margin-right: 10px;margin-left: 50px; "></iconify-icon>
+          <a class="navbar-brand" href="index.html">Looks Match</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                  aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+              <ul class="navbar-nav flex-grow-1">
+              </ul>
+          </div>
+      </div>
+  </nav>
+<body>
+    <div class="container d-flex" style="margin-top: 100px;justify-content: space-between;">
+        <div class="camera-block">
+            <select id="cameraSelector" class="form-select"></select>
+            <video id="videoElement" width="600" height="460" autoplay playsinlne></video>
+            <button id="captureButton" type="button" class="btn btn-outline-primary" style="display: none;">Take Screenshot</button>
+            <canvas id="canvas" style="display: none;"></canvas>
+        </div>
+        <div class="scan"id="scan" style="margin-right: 120px; margin-top: 70px; display: none;">
+            <div class="feetprint">
+            </div>
+            <h4>Scanning...</h4>
+        </div>
+        <!-- <div style="display: flex; flex-direction: column;">
+            <h4>Your feet</h4>
+            <div id="capturedImage"></div>
+        </div> -->
+    </div>
+
+<script>
+    window.onload = function() {
+  setTimeout(function() {
+    // Replace 'target_page.html' with the desired destination URL
+    window.location.href = 'detail.html';
+  }, 10000); // 10000 milliseconds = 10 seconds
+};
+    const video = document.getElementById('videoElement');
+    const captureButton = document.getElementById('captureButton');
+    const canvas = document.getElementById('canvas');
+    const cameraSelector = document.getElementById('cameraSelector');
+    const capturedImageContainer = document.getElementById('capturedImage');
+    const scanFrame = document.getElementById('scan');
+    navigator.mediaDevices.enumerateDevices()
+    .then(function(devices) {
+        let cameras = devices.filter(device => device.kind === 'videoinput');
+        cameras.forEach(function(camera) {
+        const option = document.createElement('option');
+        option.value = camera.deviceId;
+        option.text = camera.label || `Camera ${camera.deviceId}`;
+        cameraSelector.appendChild(option);
+        });
+        // Set the default camera when the page loads
+        const defaultCameraId = cameras[1] ? cameras[1].deviceId : null;
+        if (defaultCameraId) {
+        startCamera(defaultCameraId);
+        }
+    })
+    .catch(function(err) {
+        console.error('Error enumerating devices: ', err);
+    });
+
+    // Function to start the camera with the selected deviceId
+    function startCamera(deviceId) {
+    const constraints = {
+        video: { deviceId: { exact: deviceId } }
+    };
+    navigator.mediaDevices.getUserMedia(constraints)
+        .then(function(stream) {
+        video.srcObject = stream; 
+        scanFrame.style.display='block'; 
+        })
+        .catch(function(err) {
+        console.error('Error accessing the camera: ', err);
+        });
+    }
+
+    // Event listener for changing the selected camera
+    cameraSelector.addEventListener('change', function(event) {
+    const selectedCameraId = event.target.value;
+    if (selectedCameraId) {
+        startCamera(selectedCameraId);
+    }
+    });
+
+    captureButton.addEventListener('click', function() {
+    canvas.width = video.videoWidth;
+    canvas.height = video.videoHeight;
+    canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+    setTimeout(function() {
+  // Replace 'target_page.html' with the desired destination URL
+  window.location.href = 'detail.html';
+}, 12000);
+    //   const image = new Image();
+    //   image.src = canvas.toDataURL('image/png');
+    
+    //   capturedImageContainer.innerHTML = '';
+    //   capturedImageContainer.appendChild(image);
+    });
+    </script>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

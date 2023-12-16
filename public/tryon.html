@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+  <title>DeepAR</title>
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/5499/5499242.png" type="image/x-icon">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="mycss.css">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.13/css/all.css' asp-append-version="true">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" asp-append-version="true" />
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="myscript.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+<header>
+  <nav class="navbar fixed-top navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+      <div class="container-fluid">
+          <iconify-icon icon="ph:eye-light" width="30" height="30" style="margin-right: 10px;margin-left: 50px; "></iconify-icon>
+          <a class="navbar-brand" href="index.html">Looks Match</a>
+          <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+              <ul class="navbar-nav flex-grow-1">
+              </ul>
+          </div>
+      </div>
+  </nav>
+<body>
+    <div class="container d-flex">
+        <div class="col">
+        <canvas class="deepar" id="deepar-canvas">
+        </canvas>       
+        <div id="brand-text"><h4 style="margin: 0;">LooksMatch</h4></div>
+        <div id="loader-wrapper">
+            <span class="loader"></span></span>
+        </div>
+        <h3 id="feet-text">Click the shoes and put your feet in picture</h1>
+        </div>
+        <div class="col">
+            <div class="d-flex filter-region" >
+                <p class="text-filter">Filter by</p>
+                <select class="form-select filter">
+                    <option selected>All</option>
+                    <option value="1">Sneakers</option>
+                    <option value="2">Running</option> 
+                    <option value="3">Gym & training</option>
+                    <option value="4">Baseball</option>
+                    <option value="5">Football</option>
+                    <option value="6">Sandals and Slides </option>
+                </select>
+            </div>
+            <div class="list-product album">
+                <div class="container-fluid">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <div class="col">
+                            <div class="product-card card" id="puma-suede-classic.deepar">
+                                <span class="img-span">
+                                    <img class="card-img-top" src="https://res.cloudinary.com/do3n0jjlv/image/upload/v1702649022/Shoes/403612345_908453864339411_9020397972855382698_n_eeydn1.jpg" />
+                                </span>
+                                <div class="" style="flex:1 1 auto;padding: 0rem 0.8rem;">
+                                    <div class="d-flex justify-content-between align-items-center" style="margin-top: 5px;;">
+                                        <div class="name-span">
+                                            <p class="card-name">Puma Suede Classic Tibetan Red-Hot Coral</p>
+                                        </div>
+                                        <div class="btn-group group">
+                                            <a class="cart-link d-flex" href="https://www.walmart.com/ip/Puma-Suede-Classic-Tibetan-Red-Hot-Coral-355462-50-Women-s-Size-6-5-Medium/979957790" >
+                                                <iconify-icon icon="material-symbols:info-outline" width="15" height="15" style="margin-right: 5px; cursor: pointer;"></iconify-icon>
+                                                <iconify-icon class="cartIcon" icon="pepicons-pop:cart" width="15" height="15"></iconify-icon>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a class="price">$ 60.30</a>
+                                        <div class="d-flex justify-content-md-between" style="margin-top: 5px;">
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="col">
+                            <div class="product-card card" id="puma-voltaire.deepar">
+                                <span class="img-span">
+                                    <img class="card-img-top" src="https://a3.cdn.hhv.de/items/images/generated/475x475/00960/960187/1-puma-voltaire-og-pristine-dusty-tan.webp" />
+                                </span>
+                                <div class="" style="flex:1 1 auto;padding: 0rem 0.8rem;">
+                                    <div class="d-flex justify-content-between align-items-center" style="margin-top: 5px;;">
+                                        <div class="name-span">
+                                            <p class="card-name">Puma Volaire OG (Pristine / Dusty Tan)</p>
+                                        </div>
+                                        <div class="btn-group group">
+                                            <a class="cart-link d-flex" href="https://www.hhv.de/shop/en/item/puma-voltaire-og-pristine-dusty-tan-960187" >
+                                                <iconify-icon icon="material-symbols:info-outline" width="15" height="15" style="margin-right: 5px; cursor: pointer;"></iconify-icon>
+                                                <iconify-icon class="cartIcon" icon="pepicons-pop:cart" width="15" height="15"></iconify-icon>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a class="price">$ 57.30</a>
+                                        <div class="d-flex justify-content-md-between" style="margin-top: 5px;">
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                    
+                        <div class="col">
+                            <div class="product-card card" id="on-run-cloudrock.deepar">
+                                <span class="img-span">
+                                    <img class="card-img-top" src="https://res.cloudinary.com/do3n0jjlv/image/upload/v1702649015/Shoes/386833737_1092258232205883_1676528638559606304_n_xo4iu5.jpg" />
+                                </span>
+                                <div class="" style="flex:1 1 auto;padding: 0rem 0.8rem;">
+                                    <div class="d-flex justify-content-between align-items-center" style="margin-top: 5px;;">
+                                        <div class="name-span">
+                                            <p class="card-name">On Running Cloudrock Waterproof Cocoa Red</p>
+                                        </div>
+                                        <div class="btn-group group">
+                                            <a class="cart-link d-flex" href="https://www.snowleader.co.uk/en/cloudrock-waterproof-cocoa-red-ON__00020.html" >
+                                                <iconify-icon icon="material-symbols:info-outline" width="15" height="15" style="margin-right: 5px; cursor: pointer;"></iconify-icon>
+                                                <iconify-icon class="cartIcon" icon="pepicons-pop:cart" width="15" height="15"></iconify-icon>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                    <a class="price">£ 144.00</a>
+                                    <div class="d-flex justify-content-md-between" style="margin-top: 5px;">
+                                        <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                        <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                        <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                        <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                        <iconify-icon icon="mdi:star-outline" width="15" height="15"></iconify-icon>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="product-card card" id="on-run-cloudmonster.deepar">
+                                <span class="img-span">
+                                    <img class="card-img-top" src="https://media.finishline.com/i/finishline/6198283_680_P1?$default$&w=671&&h=671&bg=rgb(237,237,237)" />
+                                </span>
+                                <div class="" style="flex:1 1 auto;padding: 0rem 0.8rem;">
+                                    <div class="d-flex justify-content-between align-items-center" style="margin-top: 5px;;">
+                                        <div class="name-span">
+                                            <p class="card-name">Women's On CloudMonster Running Shoes</p>
+                                        </div>
+                                        <div class="btn-group group">
+                                            <a class="cart-link d-flex" href="https://www.finishline.com/store/product/womens-on-cloudmonster-running-shoes/prod2854715?styleId=6198283&colorId=680" >
+                                                <iconify-icon icon="material-symbols:info-outline" width="15" height="15" style="margin-right: 5px; cursor: pointer;"></iconify-icon>
+                                                <iconify-icon class="cartIcon" icon="pepicons-pop:cart" width="15" height="15"></iconify-icon>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a class="price">$ 170.00</a>
+                                        <div class="d-flex justify-content-md-between" style="margin-top: 5px;">
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="mdi:star-outline" width="15" height="15"></iconify-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="col">
+                            <div class="product-card card" id="nike-dunk.deepar">
+                                <span class="img-span">
+                                    <img class="card-img-top" src="https://res.cloudinary.com/do3n0jjlv/image/upload/v1702649317/Shoes/403398657_384538924011762_4284071920092880444_n_ciszhk.jpg" />
+                                </span>
+                                <div class="" style="flex:1 1 auto;padding: 0rem 0.8rem;">
+                                    <div class="d-flex justify-content-between align-items-center" style="margin-top: 5px;;">
+                                        <div class="name-span">
+                                            <p class="card-name">Nike dunk low laser orange</p>
+                                        </div>
+                                        <div class="btn-group group">
+                                            <a class="cart-link d-flex" href="https://www.nike.com/gb/t/dunk-low-shoes-1NWV9l/FN3418-100" >
+                                                <iconify-icon icon="material-symbols:info-outline" width="15" height="15" style="margin-right: 5px; cursor: pointer;"></iconify-icon>
+                                                <iconify-icon class="cartIcon" icon="pepicons-pop:cart" width="15" height="15"></iconify-icon>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a class="price">$ 147.30</a>
+                                        <div class="d-flex justify-content-md-between" style="margin-top: 5px;">
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="mdi:star-outline" width="15" height="15"></iconify-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col">
+                            <div class="product-card card" id="nike-airforce1.deepar">
+                                <span class="img-span">
+                                    <img class="card-img-top" src="https://lzd-img-global.slatic.net/g/p/b9655aae270f527efed0ec9ae9345e8d.jpg_720x720q80.jpg_.webp" />
+                                </span>
+                                <div  style="flex:1 1 auto;padding: 0rem 0.8rem;">
+                                    <div class="d-flex justify-content-between align-items-center" style="margin-top: 5px;">
+                                        <div class="name-span">
+                                            <p class="card-name">Nike AirForce 1 Orange Streak</p>
+                                        </div>
+                                        <div class="btn-group group">
+                                            <a class="cart-link d-flex" href="https://www.kicksonfire.com/app/nike-air-force-1-low-orange-streak/" >
+                                                <iconify-icon icon="material-symbols:info-outline" width="15" height="15" style="margin-right: 5px; cursor: pointer;"></iconify-icon>
+                                                <iconify-icon class="cartIcon" icon="pepicons-pop:cart" width="15" height="15"></iconify-icon>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a class="price">$ 120.00</a>
+                                        <div class="d-flex justify-content-md-between" style="margin-top: 5px;">
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="col">
+                            <div class="product-card card" id="nike-airforce-1-lv8.deepar">
+                                <span class="img-span">
+                                    <img class="card-img-top" src="https://res.cloudinary.com/do3n0jjlv/image/upload/v1702649009/Shoes/403406183_1728852937599073_6823355799884524089_n_ermnw2.jpg" />
+                                </span>
+                                <div  style="flex:1 1 auto;padding: 0rem 0.8rem;">
+                                    <div class="d-flex justify-content-between align-items-center" style="margin-top: 5px;">
+                                        <div class="name-span">
+                                            <p class="card-name">Nike AirForce 1 White/ Black-Dark Sulfur-Opti Yellow</p>
+                                        </div>
+                                        <div class="btn-group group">
+                                            <a class="cart-link d-flex" href="https://www.nike.com/vn/t/air-force-1-07-shoes-WrLlWX/CW2288-111" >
+                                                <iconify-icon icon="material-symbols:info-outline" width="15" height="15" style="margin-right: 5px; cursor: pointer;"></iconify-icon>
+                                                <iconify-icon class="cartIcon" icon="pepicons-pop:cart" width="15" height="15"></iconify-icon>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a class="price">$ 124.33</a>
+                                        <div class="d-flex justify-content-md-between" style="margin-top: 5px;">
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="mdi:star-outline" width="15" height="15"></iconify-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="product-card card" id="new-balance-574.deepar">
+                                <span class="img-span">
+                                    <img class="card-img-top" src="https://sneakerholicvietnam.vn/wp-content/uploads/2022/07/new-balance-574-navy-ml574en-768x768.jpg" />
+                                </span>
+                                <div  style="flex:1 1 auto;padding: 0rem 0.8rem;">
+                                    <div class="d-flex justify-content-between align-items-center" style="margin-top: 5px;">
+                                        <div class="name-span">
+                                            <p class="card-name">New Balance 574 – Navy</p>
+                                        </div>
+                                        <div class="btn-group group">
+                                            <a class="cart-link d-flex" href="https://sneakerholicvietnam.vn/san-pham/new-balance-574-navy/" >
+                                                <iconify-icon icon="material-symbols:info-outline" width="15" height="15" style="margin-right: 5px; cursor: pointer;"></iconify-icon>
+                                                <iconify-icon class="cartIcon" icon="pepicons-pop:cart" width="15" height="15"></iconify-icon>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a class="price">$ 110.99</a>
+                                        <div class="d-flex justify-content-md-between" style="margin-top: 5px;">
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="mdi:star-outline" width="15" height="15"></iconify-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="product-card card" id="nike-air-max.deepar">
+                                <span class="img-span">
+                                    <img class="card-img-top" src="https://res.cloudinary.com/do3n0jjlv/image/upload/v1702648997/Shoes/403411700_1364677317495142_5520796353525316835_n_m5vxwv.jpg" />
+                                </span>
+                                <div  style="flex:1 1 auto;padding: 0rem 0.8rem;">
+                                    <div class="d-flex justify-content-between align-items-center" style="margin-top: 5px;">
+                                        <div class="name-span">
+                                            <p class="card-name">Nike Air Zoom Citizen</p>
+                                        </div>
+                                        <div class="btn-group group">
+                                            <a class="cart-link d-flex" href="https://appar.store/producto/nike-air-zoom-citizen/" >
+                                                <iconify-icon icon="material-symbols:info-outline" width="15" height="15" style="margin-right: 5px; cursor: pointer;"></iconify-icon>
+                                                <iconify-icon class="cartIcon" icon="pepicons-pop:cart" width="15" height="15"></iconify-icon>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a class="price">$ 89.99</a>
+                                        <div class="d-flex justify-content-md-between" style="margin-top: 5px;">
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="product-card card" id="Shoe">
+                                <span class="img-span">
+                                    <img class="card-img-top" src="https://res.cloudinary.com/do3n0jjlv/image/upload/v1702648974/Shoes/403406760_734690218531711_5040748885208091266_n_ux9g6s.jpg" />
+                                </span>
+                                <div  style="flex:1 1 auto;padding: 0rem 0.8rem;">
+                                    <div class="d-flex justify-content-between align-items-center" style="margin-top: 5px;">
+                                        <div class="name-span">
+                                            <p class="card-name">Nike Women's Roshe Run Floral Pack Black Sail</p>
+                                        </div>
+                                        <div class="btn-group group">
+                                            <a class="cart-link d-flex" href="https://nikkishop-2.myshopify.com/products/nike-womens-roshe-run-floral-pack-black-sail" >
+                                                <iconify-icon icon="material-symbols:info-outline" width="15" height="15" style="margin-right: 5px; cursor: pointer;"></iconify-icon>
+                                                <iconify-icon class="cartIcon" icon="pepicons-pop:cart" width="15" height="15"></iconify-icon>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a class="price">$ 39.00</a>
+                                        <div class="d-flex justify-content-md-between" style="margin-top: 5px;">
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="mdi:star-outline" width="15" height="15"></iconify-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="product-card card" id="Shoe_PBR">
+                                <span class="img-span">
+                                    <img class="card-img-top" src="https://imagedelivery.net/2DfovxNet9Syc-4xYpcsGg/1edf71c9-0f83-4120-31de-38faf7e8b900/product" />
+                                </span>
+                                <div  style="flex:1 1 auto;padding: 0rem 0.8rem;">
+                                    <div class="d-flex justify-content-between align-items-center" style="margin-top: 5px;">
+                                        <div class="name-span">
+                                            <p class="card-name">Nike Air Max 270 Men's Light Bone Hot Punch Running Very Rare</p>
+                                        </div>
+                                        <div class="btn-group group">
+                                            <a class="cart-link d-flex" href="https://www.ebay.ca/itm/225589814028" >
+                                                <iconify-icon icon="material-symbols:info-outline" width="15" height="15" style="margin-right: 5px; cursor: pointer;"></iconify-icon>
+                                                <iconify-icon class="cartIcon" icon="pepicons-pop:cart" width="15" height="15"></iconify-icon>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a class="price">$ 160.00</a>
+                                        <div class="d-flex justify-content-md-between" style="margin-top: 5px;">
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                            <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
