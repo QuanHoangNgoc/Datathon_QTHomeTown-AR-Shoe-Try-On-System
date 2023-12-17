@@ -103,7 +103,7 @@ nav{
 }
 
 .product-card {
-    height: 270px;
+    height: 460px;
     width: 200px;
   cursor: pointer;
 }
@@ -156,8 +156,8 @@ nav{
     margin: 10px 15px 10px 15px;
 }
 .filter-region{
-  margin-top: -5px;
-    padding-top: 20px;
+  margin-top: 5px;
+    padding-top: 40px;
     width: 100%;
     position: fixed;
     background-color: #fff;
@@ -170,6 +170,7 @@ a.cart-link{
 /* Index page */
 .index-page{
   margin: auto;
+  color: #fff;
   text-align: center;
 }
 /*Privacy*/
@@ -254,7 +255,23 @@ a.cart-link{
 }
 .text-group p{
   font-size: 18px;
+  width: 150px;
+}
+.text-group{
+  margin-bottom: 10px;
+  margin-left: 240px;
+}
+.text-group-2{
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 0.1px;
 }
 .text-bold{
   font-weight: 600;
+}
+.line{
+  content: "";
+  height: 10px;
+  border-radius: 2px;
+  color: gray;
 }

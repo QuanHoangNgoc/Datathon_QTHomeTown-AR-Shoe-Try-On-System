@@ -71,9 +71,17 @@ productCards.forEach(card => {
     onProductCardClick(cardId);
   });
 });
-
-const startButton = document.getElementById('getStartBtn');
-
+try{
+  const startButton = document.getElementById('getStartBtn');
+  
+    // Add a click event listener to the button
+  startButton.addEventListener('click', function() {
+      window.location.href = 'getInfo.html';});
+}
+catch{
+  const showButton = document.getElementById('showBtn');
+  
   // Add a click event listener to the button
-startButton.addEventListener('click', function() {
-    window.location.href = 'getInfo.html';});
+  showButton.addEventListener('click', function() {
+    window.location.href = 'tryon.html';});
+}

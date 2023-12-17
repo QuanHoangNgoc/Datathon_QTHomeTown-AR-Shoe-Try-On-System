@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-  <title>DeepAR</title>
+  <title>Perfect Match</title>
   <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/5499/5499242.png" type="image/x-icon">
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="mycss.css">
@@ -19,7 +19,7 @@
   <nav class="navbar fixed-top navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
       <div class="container-fluid">
           <iconify-icon icon="ph:eye-light" width="30" height="30" style="margin-right: 10px;margin-left: 50px; "></iconify-icon>
-          <a class="navbar-brand" href="index.html">Looks Match</a>
+          <a class="navbar-brand" href="index.html">Perfect Match</a>
           <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
               <ul class="navbar-nav flex-grow-1">
               </ul>
@@ -31,14 +31,14 @@
         <div class="col">
         <canvas class="deepar" id="deepar-canvas">
         </canvas>       
-        <div id="brand-text"><h4 style="margin: 0;">LooksMatch</h4></div>
+        <div id="brand-text"><h4 style="margin: 0;">PerfectMatch</h4></div>
         <div id="loader-wrapper">
             <span class="loader"></span></span>
         </div>
         <h3 id="feet-text">Click the shoes and put your feet in picture</h1>
         </div>
         <div class="col">
-            <div class="d-flex filter-region" >
+            <div class="d-flex filter-region" style="display: none !important;">
                 <p class="text-filter">Filter by</p>
                 <select class="form-select filter">
                     <option selected>All</option>
@@ -50,10 +50,10 @@
                     <option value="6">Sandals and Slides </option>
                 </select>
             </div>
-            <div class="list-product album">
+            <div class="list-product album" style="margin-top: 100px;">
                 <div class="container-fluid">
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                        <div class="col">
+                        <div class="col" style="display: none;">
                             <div class="product-card card" id="puma-suede-classic.deepar">
                                 <span class="img-span">
                                     <img class="card-img-top" src="https://res.cloudinary.com/do3n0jjlv/image/upload/v1702649022/Shoes/403612345_908453864339411_9020397972855382698_n_eeydn1.jpg" />
@@ -83,7 +83,7 @@
                                 </div>
                             </div>
                         </div>    
-                        <div class="col">
+                        <div class="col" style="display: none;">
                             <div class="product-card card" id="puma-voltaire.deepar">
                                 <span class="img-span">
                                     <img class="card-img-top" src="https://a3.cdn.hhv.de/items/images/generated/475x475/00960/960187/1-puma-voltaire-og-pristine-dusty-tan.webp" />
@@ -113,7 +113,7 @@
                                 </div>
                             </div>
                         </div>                    
-                        <div class="col">
+                        <div class="col" style="display: none;">
                             <div class="product-card card" id="on-run-cloudrock.deepar">
                                 <span class="img-span">
                                     <img class="card-img-top" src="https://res.cloudinary.com/do3n0jjlv/image/upload/v1702649015/Shoes/386833737_1092258232205883_1676528638559606304_n_xo4iu5.jpg" />
@@ -143,7 +143,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col" style="display: none;">
                             <div class="product-card card" id="on-run-cloudmonster.deepar">
                                 <span class="img-span">
                                     <img class="card-img-top" src="https://media.finishline.com/i/finishline/6198283_680_P1?$default$&w=671&&h=671&bg=rgb(237,237,237)" />
@@ -171,6 +171,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="line"></div>
                             </div>
                         </div>   
                         <div class="col">
@@ -199,6 +200,23 @@
                                             <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
                                             <iconify-icon icon="mdi:star-outline" width="15" height="15"></iconify-icon>
                                         </div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="d-flex text-group-2">
+                                        <p class="text-bold">Category:</p>
+                                        <p>Sneakers</p>
+                                    </div>
+                                    <div class="d-flex text-group-2">
+                                        <p class="text-bold">Size:</p>
+                                        <p>7.5(UK)</p>
+                                    </div>
+                                    <div class="d-flex text-group-2">
+                                        <p class="text-bold" style="text-align: left;">Fit with FS:</p>
+                                        <p style="text-align: right;">Greek, Egyptian</p>
+                                    </div>
+                                    <div class="d-flex text-group-2" style="letter-spacing: 0.1px;">
+                                        <p class="text-bold">Not fit with FS:</p>
+                                        <p>Square</p>
                                     </div>
                                 </div>
                             </div>
@@ -230,10 +248,27 @@
                                             <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
                                         </div>
                                     </div>
+                                    <div class="line"></div>
+                                    <div class="d-flex text-group-2">
+                                        <p class="text-bold">Category:</p>
+                                        <p>Sneakers</p>
+                                    </div>
+                                    <div class="d-flex text-group-2">
+                                        <p class="text-bold">Size:</p>
+                                        <p>7.5(UK)</p>
+                                    </div>
+                                    <div class="d-flex text-group-2">
+                                        <p class="text-bold" style="text-align: left;">Fit with FS:</p>
+                                        <p style="text-align: right;">Greek, Egyptian</p>
+                                    </div>
+                                    <div class="d-flex text-group-2" style="letter-spacing: 0.1px;">
+                                        <p class="text-bold">Not fit with FS:</p>
+                                        <p>Square</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>  
-                        <div class="col">
+                        <div class="col" style="display: none;">
                             <div class="product-card card" id="nike-airforce-1-lv8.deepar">
                                 <span class="img-span">
                                     <img class="card-img-top" src="https://res.cloudinary.com/do3n0jjlv/image/upload/v1702649009/Shoes/403406183_1728852937599073_6823355799884524089_n_ermnw2.jpg" />
@@ -260,10 +295,27 @@
                                             <iconify-icon icon="mdi:star-outline" width="15" height="15"></iconify-icon>
                                         </div>
                                     </div>
+                                    <div class="line"></div>
+                                    <div class="d-flex text-group-2">
+                                        <p class="text-bold">Category:</p>
+                                        <p>Sneakers</p>
+                                    </div>
+                                    <div class="d-flex text-group-2">
+                                        <p class="text-bold">Size:</p>
+                                        <p>7.5(UK)</p>
+                                    </div>
+                                    <div class="d-flex text-group-2">
+                                        <p class="text-bold" style="text-align: left;">Fit with FS:</p>
+                                        <p style="text-align: right;">Greek, Egyptian</p>
+                                    </div>
+                                    <div class="d-flex text-group-2" style="letter-spacing: 0.1px;">
+                                        <p class="text-bold">Not fit with FS:</p>
+                                        <p>Square</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col" style="display: none;">
                             <div class="product-card card" id="new-balance-574.deepar">
                                 <span class="img-span">
                                     <img class="card-img-top" src="https://sneakerholicvietnam.vn/wp-content/uploads/2022/07/new-balance-574-navy-ml574en-768x768.jpg" />
@@ -293,7 +345,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col" style="display: none;">
                             <div class="product-card card" id="nike-air-max.deepar">
                                 <span class="img-span">
                                     <img class="card-img-top" src="https://res.cloudinary.com/do3n0jjlv/image/upload/v1702648997/Shoes/403411700_1364677317495142_5520796353525316835_n_m5vxwv.jpg" />
@@ -323,7 +375,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col" style="display: none;">
                             <div class="product-card card" id="Shoe">
                                 <span class="img-span">
                                     <img class="card-img-top" src="https://res.cloudinary.com/do3n0jjlv/image/upload/v1702648974/Shoes/403406760_734690218531711_5040748885208091266_n_ux9g6s.jpg" />
@@ -379,6 +431,23 @@
                                             <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
                                             <iconify-icon icon="ic:outline-star" width="15" height="15"></iconify-icon>
                                         </div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="d-flex text-group-2">
+                                        <p class="text-bold">Category:</p>
+                                        <p>Running</p>
+                                    </div>
+                                    <div class="d-flex text-group-2">
+                                        <p class="text-bold">Size:</p>
+                                        <p>7.5(UK)</p>
+                                    </div>
+                                    <div class="d-flex text-group-2">
+                                        <p class="text-bold" style="text-align: left;">Fit with FS:</p>
+                                        <p style="text-align: right;">All</p>
+                                    </div>
+                                    <div class="d-flex text-group-2" style="letter-spacing: 0.1px;margin-top: 1.4rem;">
+                                        <p class="text-bold">Not fit with FS:</p>
+                                        <p>None</p>
                                     </div>
                                 </div>
                             </div>
