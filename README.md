@@ -3,4 +3,6 @@
 - Datathon Competition
 - HK1, 2023
 ### about 
-- We take part in Datathon Top 24.
+- We take part in Datathon Top 24
+### show 
+- youtube: https://www.youtube.com/watch?v=lfzwbVj0Fnw
