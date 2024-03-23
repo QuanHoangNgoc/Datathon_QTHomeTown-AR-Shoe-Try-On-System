@@ -8,6 +8,7 @@
 - Paper reference: "AR Shoe: Real-Time Augmented Reality Shoe Try-on System on Smartphones"
 This is my MVP that we take part in Datathon Vietnam. It is a demo for Shoes Virtual Try on. 
 ### show-off 
+- [x] Video: [Shoes Vitual Try on Demo - LQD.QT MVP](https://youtu.be/lfzwbVj0Fnw?feature=shared) 
 # Repo Structure:  
 # Pipeline: 
 # How to install this project: 
