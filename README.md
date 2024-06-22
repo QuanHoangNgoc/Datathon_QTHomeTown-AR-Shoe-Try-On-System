@@ -1,17 +1,29 @@
-# Introduction
-- Dat Tran, Hoang Long Nguyen Huu, Quan Hoang Ngoc, Dai Truong Le Trong, Anh Thu Tran Van
-- Datathon Competition
-- _HK1_, 2023
+# 🌟 Dazzling Introduction to AR Shoe Try-On System 🥿
 
-### about 
-- [AR] + [Shoes] [Virtual Try On] + [CNN Model]
-- Paper reference: "AR Shoe: Real-Time Augmented Reality Shoe Try-on System on Smartphones"
-This is my MVP that we take part in Datathon Vietnam. It is a demo for Shoes Virtual Try on. 
-### show-off 
-- [x] Video: [Shoes Vitual Try on Demo - LQD.QT MVP](https://youtu.be/lfzwbVj0Fnw?feature=shared) 
-# Repo Structure:  
-# Pipeline: 
-# How to install this project: 
-# Donate: 
-- If this project is useful, please like (star) to add motivation for me. 
-- I am happy to share my knowledge and projects to people. I am willing to spend more time, enthusiasm and a well-groomed appearance for these projects. Thank you for your help. 
+## 🌟 Team Members:
+- Dat Tran
+- Hoang Long Nguyen Huu
+- Quan Hoang Ngoc
+- Dai Truong Le Trong
+- Anh Thu Tran Van
+
+## 🚀 Event: Datathon Competition 📅
+- Season: _HK1_, 2023
+
+### 🌌 About:
+Dive into the fusion of [AR] technology with [Shoes] for a captivating [Virtual Try On] experience powered by a cutting-edge [CNN Model]. Our inspiration stems from the groundbreaking paper, "AR Shoe: Real-Time Augmented Reality Shoe Try-on System on Smartphones". Witness our MVP that took the spotlight at Datathon Vietnam, showcasing a mesmerizing Shoes Virtual Try-On demo.
+
+### 🌟 Show-Off Spotlight: ✨
+- [x] **Video Showcase**: [Experience the Magic - AR Shoe Virtual Try-On Demo (LQD.QT MVP)](https://youtu.be/lfzwbVj0Fnw?feature=shared) 
+
+# 🌟 Repository Structure:
+Discover the architectural marvel of our project.
+
+# 🚀 Pipeline:
+Unveil the seamless flow of innovation.
+
+# 💻 How to Install this Masterpiece:
+Embark on the journey to experiencing virtual elegance.
+
+# 🌟 Donation Appreciation:
+If our creation has enriched your life, consider giving us a virtual high-five by starring the project. Your appreciation fuels our passion to impart knowledge and create more polished projects. Thank you for being part of our supportive community. 🌟🚀💖
