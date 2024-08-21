@@ -24,7 +24,7 @@ This project is an exciting blend of **Augmented Reality (AR)** technology and *
 Our project is an **AR Shoe Try-On System** that allows users to virtually try on shoes using their smartphones. The system uses AR technology to overlay shoes onto the user’s feet in real time, creating an immersive and interactive experience. This project is designed for anyone interested in the fusion of fashion and technology, particularly those in the retail or e-commerce industry looking to enhance customer engagement.
 
 ### 🎥 Demo and Results:
-- **Video Showcase**: [Watch the AR Shoe Virtual Try-On Demo (LQD.QT MVP)](https://youtu.be/lfzwbVj0Fnw?feature=shared)
+- **Video Showcase**: **[Watch the AR Shoe Virtual Try-On Demo (LQD.QT MVP)](https://youtu.be/lfzwbVj0Fnw?feature=shared)**
 
 ---
 
