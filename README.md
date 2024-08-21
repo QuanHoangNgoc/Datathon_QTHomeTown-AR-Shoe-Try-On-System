@@ -1,4 +1,4 @@
-# 🌟 AR Shoe Try-On System: A Dazzling Introduction 🥿
+# 🌟 AR Shoe Try-On System 🥿
 
 ## 👥 Team Members
 - Dat Tran
